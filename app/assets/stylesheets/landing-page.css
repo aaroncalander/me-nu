@@ -162,3 +162,8 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+img#logo {
+  width:125px;
+   height: auto;
+}
