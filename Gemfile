@@ -4,8 +4,11 @@ git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
+
+gem 'rufus-scheduler', '~> 3.2'
 gem 'hirb'
 gem 'faker'
+gem "paperclip", "~> 5.0.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.2'
 # Use postgresql as the database for Active Record
@@ -32,8 +35,8 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 gem 'haml'
+gem 'materialize-sass'
 
-gem 'bootstrap', '~> 4.0.0.alpha6'
 # gem 'autoprefixer-rails'
 
 # Use Capistrano for deployment
